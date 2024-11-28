@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Header Styling */
+h1 {
+  font-size: 2.5em;
+  color: #1e88e5;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+h1::before {
+  content: "🎬";
+  font-size: 1.5em;
+}
+
+.movie-list {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.movie-item {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.movie-item h2 {
+  font-size: 1.3em;
+  color: #333;
+}
+
+.movie-item p {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.movie-item button {
+  background: #1e88e5;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.movie-item button:hover {
+  background: #1565c0;
+}
+
+/* Form Styling */
+form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background: #388e3c;
+}
+
+/* Footer Styling */
+footer {
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  background: #343a40;
+  color: #ffffff;
+  border-radius: 8px;
+}
